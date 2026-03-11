@@ -320,6 +320,7 @@ html {
 
 #main-visual-video {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -338,6 +339,55 @@ html {
   font-weight: 700;
   letter-spacing: -0.02em;
   text-align: center;
+}
+.section-2-content {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 665px;
+}
+.section-2-content .swiper-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 100%;
+  padding: 9px 0 110px 0;
+}
+.section-2-content .swiper-slide {
+  position: absolute;
+  width: 335px !important;
+  height: 550px;
+  max-width: 335px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.section-2-content .swiper-slide-1 {
+  left: 5.9375%;
+  transform: rotate(-3deg);
+  top: 0px;
+}
+.section-2-content .swiper-slide-2 {
+  left: 20.3645%;
+  transform: translate(-50%, 0%) translate(50%, 0px);
+  top: 102px;
+}
+.section-2-content .swiper-slide-3 {
+  left: calc(50% + 9px);
+  transform: translateX(-50%);
+}
+.section-2-content .swiper-slide-4 {
+  left: 63.125%;
+  transform: translate(-50%, 0%) translate(50%, 0px);
+  top: 30px;
+}
+.section-2-content .swiper-slide-5 {
+  left: calc(75.625% + 23px);
+  transform: translate(-50%, 0%) translate(50%, 0px) rotate(2deg);
+  top: 73px;
 }
 
 /* 섹션 구현 끝 */

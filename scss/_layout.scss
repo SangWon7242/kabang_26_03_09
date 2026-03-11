@@ -343,6 +343,7 @@
 
 #main-visual-video {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 // 첫 번째 섹션 구현 끝
@@ -362,6 +363,63 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       text-align: center;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 665px;
+
+    .swiper-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1920px;
+      height: 100%;
+      padding: 9px 0 110px 0;
+    }
+
+    .swiper-slide {
+      position: absolute;
+      width: 335px !important;
+      height: 550px;
+      max-width: 335px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-right: 20px;
+
+      &-1 {
+        left: 5.9375%;
+        transform: rotate(-3deg);
+        top: 0px;
+      }
+
+      &-2 {
+        left: 20.3645%;
+        transform: translate(-50%, 0%) translate(50%, 0px);
+        top: 102px;
+      }
+
+      &-3 {
+        left: calc(50% + 9px);
+        transform: translateX(-50%);
+      }
+
+      &-4 {
+        left: 63.125%;
+        transform: translate(-50%, 0%) translate(50%, 0px);
+        top: 30px;
+      }
+
+      &-5 {
+        left: calc(75.625% + 23px);
+        transform: translate(-50%, 0%) translate(50%, 0px) rotate(2deg);
+        top: 73px;
+      }
     }
   }
 }
