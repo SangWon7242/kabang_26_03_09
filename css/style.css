@@ -95,9 +95,14 @@ html {
 /* 헤더 구현 시작 */
 #header {
   z-index: 999;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 #header:hover {
   background-color: #fff;
+}
+#header.header-hidden {
+  transform: translateY(-100%);
 }
 
 .logo {
@@ -242,23 +247,18 @@ html {
 .select-lang-menu .ic-link {
   width: 24px;
   height: 24px;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-position: center;
-          mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
   display: inline-block;
   background-color: #000;
   padding-inline: 20px;
 }
 .select-lang-menu .ko-link {
-  -webkit-mask-image: url(../assets/images/ic-kr.svg);
-          mask-image: url(../assets/images/ic-kr.svg);
+  mask-image: url(../assets/images/ic-kr.svg);
 }
 .select-lang-menu .en-link {
-  -webkit-mask-image: url(../assets/images/ic-en.svg);
-          mask-image: url(../assets/images/ic-en.svg);
+  mask-image: url(../assets/images/ic-en.svg);
   background-color: #888;
 }
 
@@ -362,8 +362,7 @@ html {
 .background-wrap .scroll-down-box button img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @keyframes scrollDown {
   0% {
@@ -377,8 +376,7 @@ html {
 #main-visual-video {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .section-2 {
@@ -696,8 +694,7 @@ html {
   margin-right: 3%;
 }
 .section-4 .cont-grid-wrap .info-box .arrow-icon-box .arrow-icon {
-  -webkit-mask: url(../assets/images/ic-link-arrow-right-black.svg) no-repeat center/cover;
-          mask: url(../assets/images/ic-link-arrow-right-black.svg) no-repeat center/cover;
+  mask: url(../assets/images/ic-link-arrow-right-black.svg) no-repeat center/cover;
   display: block;
   position: absolute;
   top: 50%;
@@ -1090,8 +1087,7 @@ html {
 #footer .footer-badges .badge-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 #footer .footer-links {
   display: flex;
@@ -1151,3 +1147,5 @@ html {
 }
 
 /* footer 구현 끝 */
+
+/*# sourceMappingURL=style.css.map */
